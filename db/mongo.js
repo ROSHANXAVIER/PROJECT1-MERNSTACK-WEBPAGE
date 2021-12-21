@@ -3,7 +3,7 @@ const express=require('express')
 const { Mongoose }= require('mongoose')
 const app=express()
 const bodyParser=require('body-parser')
-const Todo=require('./models/todo')
+const Todo=require('./todo')
 const path=require('path')
 
 const bcrypt=require('bcryptjs')
