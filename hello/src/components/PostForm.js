@@ -1,17 +1,22 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Home from './database'
 class PostForm extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
              userId:'',
-             title:''
+             title:'',
         }
         this.state={
             response:[]
 
         }
+        this.state={
+            posts:[]
+        }
+        
     }
 
     changeHandler=(e)=>{
@@ -28,6 +33,7 @@ class PostForm extends Component {
             console.log(error)
         })
     }
+    
     render(){
         const{userId,title}=this.state
         return(
@@ -41,6 +47,7 @@ class PostForm extends Component {
                     </div>
                     <button type='submit'>SUBMIT</button>
                 <div>{this.state.response}</div>
+                <div><Home/></div>
                 </form>
             </div>
         )

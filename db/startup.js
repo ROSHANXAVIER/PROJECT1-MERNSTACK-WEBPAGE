@@ -17,8 +17,10 @@ console.log(Todo)
 app.get('/',async (req,res)=>{
     const data=await Todo.find({name:'rosh'})
     console.log(data)
-    res.json(data)
-})
+    dataToSend = data[0];
+    res.send(dataToSend)
+    console.log(dataToSend)
+}) 
  
 
 app.post('/add',async(req,res)=>{
