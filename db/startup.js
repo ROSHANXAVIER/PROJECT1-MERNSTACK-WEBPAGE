@@ -7,7 +7,7 @@ const Todo=require('./todo')
 const path=require('path')
 const cors = require('cors')
 app.use(cors())
-
+var conn=Mongoose.connection
 
 
 app.use(bodyParser.json())
@@ -28,12 +28,15 @@ app.post('/add',async(req,res)=>{
     let user = req.body.userId;
     let title = req.body.title;
     let retur = 'the return data is '+ user + title
-    let r=await Todo.find({name:title})
-    dat=r[0].age
-    s=String(dat)
-    console.log(retur)
-    console.log(s)
-    res.send(s)
+    // let r=await Todo.find({name:title})
+    // let dat=r[0].age
+    // let g=r[0].name
+    // s=String(dat)
+    const result=await Todo.create({
+        name:user,
+        age:title
+    })
+    console.log(result)
 })
 
 

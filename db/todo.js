@@ -1,8 +1,8 @@
 const mongoose=require('mongoose')
 
 const TodoSchema=new mongoose.Schema({
-    name:{type:String},
-    age:{type:Number}},
+    name:{type:String,default:'he'},
+    age:{type:Number,default:100}},
     {collection:'sample'}
 )
 const model=mongoose.model('TodoModel',TodoSchema)
