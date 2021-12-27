@@ -24,7 +24,7 @@ class PostForm extends Component {
     }
     submitHandler=(e)=>{
         e.preventDefault()
-        console.log(this.state)
+        console.log(this.state) 
         axios.post('http://localhost:8080/add',this.state)
         .then(res=>{
             this.setState({response:res.data})

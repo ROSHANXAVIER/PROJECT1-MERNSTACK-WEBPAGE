@@ -9,6 +9,7 @@ const cors = require('cors')
 app.use(cors())
 
 
+
 app.use(bodyParser.json())
 
 app.use('/',express.static(path.join(__dirname,'static')))
@@ -27,10 +28,12 @@ app.post('/add',async(req,res)=>{
     let user = req.body.userId;
     let title = req.body.title;
     let retur = 'the return data is '+ user + title
-    let r='pass :'+title
+    let r=await Todo.find({name:title})
+    dat=r[0].age
+    s=String(dat)
     console.log(retur)
-    console.log(r)
-    res.send(r)
+    console.log(s)
+    res.send(s)
 })
 
 
