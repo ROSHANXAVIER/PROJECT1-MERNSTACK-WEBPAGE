@@ -43,7 +43,7 @@ class PostForm extends Component {
                         <input type="text" name='userId' value={userId} onChange={this.changeHandler}/>
                     </div>
                     <div>
-                        <input type="number" name='title' value={title} onChange={this.changeHandler}/>
+                        <input type="text" name='title' value={title} onChange={this.changeHandler}/>
                     </div>
                     <button type='submit'>SUBMIT</button>
                 <div>{this.state.response}</div>
