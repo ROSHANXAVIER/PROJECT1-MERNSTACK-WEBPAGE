@@ -1,6 +1,18 @@
 .App {
   text-align: center;
-  color:#88c4fc;
+  text-decoration-color: ivory;
+  color:white;
+  background:linear-gradient(35deg,#4568dc,#b06ab3)
+}
+.he {
+  background-color: green;
+  color: white;
+}
+
+.but {
+  color:white;
+  background-color: red;
+  text-align:60px ;
 }
 
 .App-logo {

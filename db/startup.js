@@ -45,7 +45,7 @@ app.post('/add',async(req,res)=>{
     hi()
     async function hi(){
         try{
-            let r=await Todo.find({name:title})
+            let r=await Todo.find({name:user})
             let dat=r[0].age
             s=String(dat)
             res.send(dat)
@@ -55,7 +55,7 @@ app.post('/add',async(req,res)=>{
                 name:user,
                 age:title
             })
-            res.send('UNknown name , a name has been created')
+            res.send('UNknown name , name added to database')
         }
     }
 })

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import Home from './database'
+import '../Ap.css'
+// import Home from './database'
 class PostForm extends Component {
     constructor(props) {
         super(props)
@@ -40,14 +41,16 @@ class PostForm extends Component {
             <div>
                 <form onSubmit={this.submitHandler}>
                     <div>
+                        ENTER THE NAME OF THE PERSON TO FIND AGE:
                         <input type="text" name='userId' value={userId} onChange={this.changeHandler}/>
                     </div>
                     <div>
+                        ENTER THE AGE IF ITS A NEW ENTRY:
                         <input type="text" name='title' value={title} onChange={this.changeHandler}/>
                     </div>
-                    <button type='submit'>SUBMIT</button>
-                <div>{this.state.response}</div>
-                <div><Home/></div>
+                    <button className='but' type='submit'>SUBMIT</button>
+                <div>THE AGE OF THE PERSON :{this.state.response}</div>
+                {/* <div><Home/></div> */}
                 </form>
             </div>
         )

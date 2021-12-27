@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import '../Ap.css'
 
 class Message extends Component {
     constructor(){
         super()
         this.state={
-             Message:'welcome boy'
+             Message:'PLEASE SUBSCRIBE'
         }
     }
      changeMessage() {
@@ -17,7 +18,7 @@ class Message extends Component {
     
  render(){
      return(<div><h1>{this.state.Message}</h1>
-     <button onClick={()=>{
+     <button className='he' onClick={()=>{
          this.changeMessage()
      }}>SUBSCRIBE</button></div>)
  }
