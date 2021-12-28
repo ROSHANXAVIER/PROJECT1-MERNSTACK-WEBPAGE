@@ -16,6 +16,8 @@
     "react-native": "^0.66.4",
     "react-scripts": "4.0.3",
     "reactstrap": "^9.0.1",
+    "waypoint": "^0.2.8",
+    "waypoints": "^4.0.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
