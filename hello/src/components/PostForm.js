@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import '../Ap.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 // import Home from './database'
+// import Button from 'react-bootstrap/Button'
+import {Button} from 'reactstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 class PostForm extends Component {
     constructor(props) {
         super(props)
@@ -40,15 +45,17 @@ class PostForm extends Component {
         return(
             <div>
                 <form onSubmit={this.submitHandler}>
-                    <div>
+                    <div className='ali'>
                         ENTER THE NAME OF THE PERSON TO FIND AGE:
                         <input type="text" name='userId' value={userId} onChange={this.changeHandler}/>
                     </div>
+                    <p></p>
                     <div>
                         ENTER THE AGE IF ITS A NEW ENTRY:
                         <input type="text" name='title' value={title} onChange={this.changeHandler}/>
                     </div>
-                    <button className='but' type='submit'>SUBMIT</button>
+                    <p></p>
+                    <Button className='btn btn-outline-danger' type='submit'>SUBMIT</Button>
                 <div>THE AGE OF THE PERSON :{this.state.response}</div>
                 {/* <div><Home/></div> */}
                 </form>

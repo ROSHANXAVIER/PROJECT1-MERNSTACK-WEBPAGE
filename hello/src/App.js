@@ -4,6 +4,9 @@ import React,{Component} from 'react'
 import Greet from './components/greet'
 import Message from './components/message'
 import PostForm from './components/PostForm'
+// import Button from 'reactstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 class App extends Component{
   render(){
     return(
@@ -14,6 +17,7 @@ class App extends Component{
       <div>
         <Message/>
       </div>
+
       <div>
         <PostForm/>
       </div>
@@ -21,6 +25,7 @@ class App extends Component{
     );
   }
 }
+
 
 
 

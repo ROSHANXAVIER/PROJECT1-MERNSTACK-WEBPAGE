@@ -4,6 +4,10 @@
   color:white;
   background:linear-gradient(35deg,#4568dc,#b06ab3)
 }
+
+.top{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .he {
   background-color: green;
   color: white;
@@ -11,13 +15,23 @@
 
 .but {
   color:white;
-  background-color: red;
+  background-color:white;
   text-align:60px ;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.ali {
+  padding-right: 85px;
+  padding-top: 20px;
+}
+
+.btn btn-outline-danger {
+  background:linear-gradient(35deg,#4568dc,#b06ab3) ;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,7 +41,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1d5fe2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

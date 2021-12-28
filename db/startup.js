@@ -55,7 +55,7 @@ app.post('/add',async(req,res)=>{
                 name:user,
                 age:title
             })
-            res.send('UNknown name , name added to database')
+            res.send('Unknown name , name added to database')
         }
     }
 })
