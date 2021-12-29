@@ -56,7 +56,7 @@ class PostForm extends Component {
                     </div>
                     <p></p>
                     <Button className='btn btn-outline-danger' type='submit'>SUBMIT</Button>
-                <div>THE AGE OF THE PERSON :{this.state.response}</div>
+                <div className='agen'>THE AGE OF THE PERSON :<h2 className='numb'>{this.state.response}</h2></div>
                 {/* <div><Home/></div> */}
                 </form>
             </div>

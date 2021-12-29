@@ -4,6 +4,55 @@
   color:white;
   background:linear-gradient(35deg,#4568dc,#b06ab3)
 }
+.age {
+  text-align: left;
+  text-decoration-color: ivory;
+  color:white;
+  background:linear-gradient(35deg,#4568dc,#b06ab3);
+  padding-bottom: 150px;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+.agex{
+  text-align: left;
+  text-decoration-color: ivory;
+  color:white;
+  background:linear-gradient(35deg,#4568dc,#b06ab3);
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.imgme{
+  text-align:center;
+  padding-left: 610px;
+}
+.numb{
+  text-size-adjust: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.agen{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.maina{
+  text-align: center;
+  font-weight:300 ;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 200px;
+  padding-bottom : 50px;
+}
+.mainax{
+  text-align: center;
+  font-weight:300 ;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 100px;
+  padding-bottom : 20px;
+
+}
 
 .top{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -185,7 +234,7 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
 }
 
 .sidebar .logo a {
-  display: inline-block;
+  display:contents;
   width: 172px;
   height: 34px;
   background: url(https://i.pinimg.com/736x/8d/e3/d2/8de3d2b07c795fd69362ab4177413b5b.jpg)left top no-repeat;
@@ -204,6 +253,8 @@ a.btn-customized.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
   border: 0;
   color: #fff;
 }
+
+
 
 .sidebar ul li a:hover,
 .sidebar ul li a:focus,
@@ -303,11 +354,11 @@ a.btn-customized-4 {
   text-indent: -999999px;
 }
 
-a.btn-customized-4.btn-customized-dark {
+a.btn-customized-4,btn-customized-dark {
   background: #222;
 }
 
-a.btn-customized-4.btn-customized-light {
+a.btn-customized-4,btn-customized-light {
   background: #fff;
 }
 
@@ -333,9 +384,9 @@ a.btn-customized-4.btn-customized-light.active:focus,
 a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disabled):active,
 a.btn-customized-4.btn-customized-light.btn.btn-primary:not(:disabled):not(.disabled):active:focus {
   outline: 0;
-  background: #555;
+  background:#555;
   border: 0;
-  color: #fff;
+  color:#fff;
   box-shadow: none;
 }
 @media
