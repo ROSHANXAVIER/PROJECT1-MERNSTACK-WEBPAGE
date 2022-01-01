@@ -22,10 +22,10 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -b master -d build",
-      "start": "react-scripts start",
-      "build": "react-scripts build",
+      "predeploy": "node root.js",
+      "deploy": "node rootj.js",
+      "start": "node rootj.js",
+      "build": "node root.js",
       "homepage": "https://ROSHANXAVIER.github.io/firstapp"  
   },
   "eslintConfig": {
